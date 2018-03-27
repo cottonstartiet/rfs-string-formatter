@@ -1,6 +1,6 @@
 {
   "name": "rfs-string-formatter",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "String formatter utility for Javascript",
   "main": "src/index.js",
   "scripts": {

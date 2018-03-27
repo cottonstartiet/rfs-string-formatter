@@ -21,11 +21,11 @@ module.exports = {
 
     if (args instanceof Array) {
       for (i = 0; i < args.length; i++) {
-        format = format.replace(new RegExp('\\{' + i + '\\}', 'gm'), args[i]);
+        format = template.replace(new RegExp('\\{' + i + '\\}', 'gm'), args[i]);
       }
     } else {
       for (i = 0; i < arguments.length - 1; i++) {
-        format = format.replace(new RegExp('\\{' + i + '\\}', 'gm'), arguments[i + 1]);
+        format = template.replace(new RegExp('\\{' + i + '\\}', 'gm'), arguments[i + 1]);
       }
     }
     
