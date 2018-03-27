@@ -1,4 +1,4 @@
-module.export = {
+module.exports = {
   /**
    * Function that formats a template string and replaces placeholders with arguments
    * For e.g. if Template - "This is a {0} {1} module"
@@ -20,16 +20,15 @@ module.export = {
     }
 
     if (args instanceof Array) {
-      console.log('formatting as array')
       for (i = 0; i < args.length; i++) {
         format = format.replace(new RegExp('\\{' + i + '\\}', 'gm'), args[i]);
       }
     } else {
-      console.log('in else')
       for (i = 0; i < arguments.length - 1; i++) {
         format = format.replace(new RegExp('\\{' + i + '\\}', 'gm'), arguments[i + 1]);
       }
     }
+    
     return format;
   }
 }
