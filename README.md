@@ -17,3 +17,9 @@ OR
 formatter.format("String to be {0} and {1}", ["formatted", "parsed"])
 ```
 
+### formatReplace(template, argObj)
+Formats the template string using the argObjec keys and their values
+```
+formatter.formatReplace("Today is {day} and the year is {year}", { day: "Monday", year: "2018" });
+// Today is Monday and the year is 2018
+``` 
